@@ -11,5 +11,10 @@ pipeline{
                 sh "echo second hello world"
             }
         }
+        stage ("three"){
+            steps{
+                sh "echo ${version_no}"
+            }
+        }
     }
 }
