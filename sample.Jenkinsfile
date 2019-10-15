@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage ("one"){
             steps {
-                echo "hello world"
+                sh "echo hello world"
             }
         }
         stage ("two"){
             steps{
-                sh echo "second hello world"
+                sh "echo second hello world"
             }
         }
     }
